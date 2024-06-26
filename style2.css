@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: bisque;
+}
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+#background-video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.navbar a {
+    text-decoration: underline;
+    color: lightsteelblue;
+    font-size: large;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.content {
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    background-color: rgba(255, 255, 255, 0.5) ;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.4s;
+
+}
+
+.content:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+p {
+    text-align: center;
+    color: black;
+    padding: 8px 0;
+}
+
+h6 {
+    font-size: 26px;
+    text-align: center;
+    color: lightseagreen;
+    margin: 0;
+}
+
+button {
+    font-size: 24px;
+    color: bisque;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 2px solid black; 
+}
+
+.buy-1 {
+    background: lightblue;
+}
+
+.buy-2 {
+    background: lightgreen;
+}
+
+.buy-3 {
+    background: darkgray;
+}
+
+.buy-4 {
+    background: black;
+}
+
+@media (max-width: 1000px) {
+    .content {
+        width: 45%;
+    }
+}
+
+@media (max-width: 750px) {
+    .content {
+        width: 100%;
+    }
+}
+
+#title {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: double;
+    color: beige;
+    margin: 20px;
+    padding-top: 35px;
+}
+
+#soustitre{
+    background-color: transparent;
+    border-radius: 20px;
+    text-decoration: underline;
+    text-align: center;
+    color: lightgreen;
+    margin: 20px;
+    padding-top: 35px;
+}
